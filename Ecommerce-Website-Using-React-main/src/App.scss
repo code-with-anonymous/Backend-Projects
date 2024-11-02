@@ -1,0 +1,88 @@
+@import "./scss/hero";
+@import "./scss/ExampleCarouselImage";
+@import "./scss/popularProducts";
+@import "./scss/imageSlider";
+@import "./scss/footer";
+@import "./scss/.hero";
+@import "./scss/team";
+@import "./scss/contactForm";
+@import "./scss/navbar";
+@import "./scss/.mainHeroSection";
+@import "./scss/mainChooseUs";
+@import "./scss/mainSection1";
+@import "./scss/mainTestimonial";
+@import"./scss/mainFeaturedProduct";
+@import "./scss/header";
+@import "./scss/footer";
+@import "./scss/mainSpinner";
+@import "./scss/login";
+@import "./scss/buyerdashboard";
+
+
+/* Ensures root div takes 100vh and applies flex layout to center content */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Allows main content area to grow to fill available space */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ 
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+a {
+  color: #fff; /* Change to your desired color */
+  text-decoration: none; /* Remove underline (optional) */
+}
+
+a:hover {
+  color: #fff; /* Change hover color */
+}
+body{
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

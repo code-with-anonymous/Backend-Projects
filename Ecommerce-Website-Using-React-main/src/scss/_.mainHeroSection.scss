@@ -1,0 +1,136 @@
+.hero {
+  background-image: url('../../src/images/slider-bg.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+.hero-content {
+  max-width: 500px;
+  margin-left: 5%;
+  padding: 2rem 0;
+}
+
+.hero-sale {
+  font-size: 3.7rem;
+  color: #f44336;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-title {
+  font-size: 3.7rem;
+  color: #0a0a0a;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.hero-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.hero-button:hover {
+  background-color: #d9362a;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  /* Adjustments for tablets */
+  .hero {
+    padding: 1.5rem;
+  }
+  
+  .hero-sale,
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    margin-left: 3%;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller tablets and large phones */
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .hero-sale {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-content {
+    margin-left: 2%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  .hero {
+    padding: 0.75rem;
+    height: auto; /* Allow content to dictate height */
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .hero-sale,
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
